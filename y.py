@@ -14,7 +14,7 @@ import os
 #print(classes)
 def res(img):
       #  img=cv2.imread(img1)
-        yolo = cv2.dnn.readNet("C:/Users/HP/Desktop/yolov3/yolov3-spp.weights","C:/Users/HP/Desktop/yolov3/weights1.cfg")
+        yolo = cv2.dnn.readNet("yolov3-spp.weights","weights1.cfg")
         classes = open("./coco_classes.txt", "r").read().splitlines()
         blob=cv2.dnn.blobFromImage(img,1/255,(320,320),swapRB=True,crop=False)
         j=blob[0].reshape(320,320,3)
