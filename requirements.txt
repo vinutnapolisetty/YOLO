@@ -86,3 +86,4 @@ watchdog==3.0.0
 wcwidth==0.2.6
 zipp==3.16.2
 opencv-python==4.8.0.76
+
